@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book a Tour | Exclusive Fitness Studio</title>
+<meta name="description" content="Book a tour of Exclusive Fitness Studio. Explore the facility, ask questions and see whether it's the right fit for you.">
+<link rel="canonical" href="https://www.exclusivefitnessstudio.com/book-a-tour.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Book a Tour | Exclusive Fitness Studio">
+<meta property="og:description" content="Book a visit to explore the facility, ask questions and see whether Exclusive Fitness Studio is the right fit for you.">
+<meta property="og:image" content="images/og-cover.jpg">
+<meta property="og:url" content="https://www.exclusivefitnessstudio.com/book-a-tour.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="index, follow">
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a href="index.html" class="logo">EXCLUSIVE<span>.</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="the-studio.html">The Studio</a>
+      <a href="facility.html">Facility</a>
+      <a href="personal-training.html">Personal Training</a>
+      <a href="memberships.html">Memberships</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="header__actions">
+      <a href="book-a-tour.html" class="btn btn--primary">Book a Tour</a>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobile-menu">
+  <nav class="mobile-menu__links" aria-label="Mobile">
+    <a href="index.html">Home <span>01</span></a>
+    <a href="the-studio.html">The Studio <span>02</span></a>
+    <a href="facility.html">Facility <span>03</span></a>
+    <a href="personal-training.html">Personal Training <span>04</span></a>
+    <a href="memberships.html">Memberships <span>05</span></a>
+    <a href="contact.html">Contact <span>06</span></a>
+  </nav>
+  <div class="mobile-menu__foot">
+    <a href="book-a-tour.html" class="btn btn--primary btn--block">Book a Tour</a>
+    <ul class="mobile-menu__social" data-cfg-social></ul>
+  </div>
+</div>
+
+<main id="main">
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="breadcrumb"><a href="index.html">Home</a> / Book a Tour</p>
+      <span class="eyebrow">Book a Tour</span>
+      <h1 class="display-1 mt-lg">SEE THE DIFFERENCE<br>IN PERSON.</h1>
+      <p class="lead mt-lg">Book a visit to explore the facility, ask questions and see whether Exclusive Fitness Studio is the right fit for you.</p>
+    </div>
+  </section>
+
+  <section class="section section--black">
+    <div class="container split" style="align-items:flex-start;">
+
+      <div class="reveal" data-form-wrapper>
+        <form data-form="tour" novalidate>
+          <div class="form-grid">
+
+            <div class="field">
+              <label for="tour-name">Full Name<span class="req">*</span></label>
+              <input type="text" id="tour-name" name="fullName" autocomplete="name" data-validate="required" aria-describedby="tour-name-error">
+              <span class="field__error" id="tour-name-error" role="alert"></span>
+            </div>
+
+            <div class="field">
+              <label for="tour-email">Email Address<span class="req">*</span></label>
+              <input type="email" id="tour-email" name="email" autocomplete="email" data-validate="required email" aria-describedby="tour-email-error">
+              <span class="field__error" id="tour-email-error" role="alert"></span>
+            </div>
+
+            <div class="field">
+              <label for="tour-phone">Phone Number</label>
+              <input type="tel" id="tour-phone" name="phone" autocomplete="tel" data-validate="phone" aria-describedby="tour-phone-error">
+              <span class="field__error" id="tour-phone-error" role="alert"></span>
+            </div>
+
+            <div class="field">
+              <label for="tour-date">Preferred Date<span class="req">*</span></label>
+              <input type="date" id="tour-date" name="preferredDate" data-validate="required" aria-describedby="tour-date-error">
+              <span class="field__error" id="tour-date-error" role="alert"></span>
+            </div>
+
+            <div class="field">
+              <label for="tour-time">Preferred Time<span class="req">*</span></label>
+              <select id="tour-time" name="preferredTime" data-validate="required" aria-describedby="tour-time-error">
+                <option value="">Select a time</option>
+                <option>Morning (8am – 11am)</option>
+                <option>Midday (11am – 2pm)</option>
+                <option>Afternoon (2pm – 5pm)</option>
+                <option>Evening (5pm – 8pm)</option>
+              </select>
+              <span class="field__error" id="tour-time-error" role="alert"></span>
+            </div>
+
+            <div class="field">
+              <label id="contact-method-label">Preferred Contact Method<span class="req">*</span></label>
+              <div class="radio-row" role="radiogroup" aria-labelledby="contact-method-label">
+                <label class="radio-option"><input type="radio" name="contactMethod" value="Email" data-validate="required" checked> Email</label>
+                <label class="radio-option"><input type="radio" name="contactMethod" value="Phone" data-validate="required"> Phone</label>
+                <label class="radio-option"><input type="radio" name="contactMethod" value="Either" data-validate="required"> Either</label>
+              </div>
+            </div>
+
+            <div class="field field--full">
+              <label for="tour-message">Message</label>
+              <textarea id="tour-message" name="message" placeholder="Anything you'd like us to know ahead of your visit — goals, questions, accessibility needs, etc."></textarea>
+            </div>
+
+          </div>
+
+          <div class="submit-row">
+            <button type="submit" class="btn btn--primary">
+              <span class="spinner"></span>
+              <span class="btn-label-idle">Request a Tour</span>
+              <span class="btn-label-loading" style="display:none;">Sending…</span>
+            </button>
+          </div>
+
+          <div class="form-status" role="status"></div>
+        </form>
+      </div>
+
+      <div class="reveal">
+        <div class="info-card">
+          <div class="info-card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+          <h3>What to Expect</h3>
+          <p>A member of the team will meet you at the studio, walk you through the facility, and answer any questions about training, access and membership options — no pressure, no obligation.</p>
+        </div>
+        <div class="info-card" style="margin-top:1.2rem;">
+          <div class="info-card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9.5"/><path d="M12 7v5l3.2 2"/></svg></div>
+          <h3>Prefer to Call?</h3>
+          <p>Reach us directly at <a data-cfg-phone-href data-cfg-phone-text href="#"></a> or email <a data-cfg-email-href data-cfg-email-text href="#"></a>.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <a href="index.html" class="logo">EXCLUSIVE<span>.</span></a>
+        <p style="margin-top:1rem; max-width:32ch;">A premium 24/7 training environment built for people serious about their fitness.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="the-studio.html">The Studio</a></li>
+          <li><a href="facility.html">Facility</a></li>
+          <li><a href="personal-training.html">Personal Training</a></li>
+          <li><a href="memberships.html">Memberships</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li data-cfg-address></li>
+          <li><a data-cfg-phone-href data-cfg-phone-text href="#"></a></li>
+          <li><a data-cfg-email-href data-cfg-email-text href="#"></a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Follow</h4>
+        <ul data-cfg-social></ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span data-cfg-year></span> <span data-cfg-brand></span>. All rights reserved.</span>
+      <span data-cfg-access-hours></span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/config.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
