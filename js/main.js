@@ -502,13 +502,37 @@ const EFS_CONFIG = {
   // predictable convention so the whole gallery can be swapped without
   // touching markup.
   gallery: [
-    { src: "images/facility-01.jpg", alt: "Free weights and strength training area", category: "Strength" },
-    { src: "images/facility-02.jpg", alt: "Cardio equipment along the studio window line", category: "Cardio" },
-    { src: "images/facility-03.jpg", alt: "Dedicated functional training space", category: "Functional" },
-    { src: "images/facility-04.jpg", alt: "Rack of Olympic barbells and plates", category: "Strength" },
-    { src: "images/facility-05.jpg", alt: "Wide view of the main studio floor", category: "Studio" },
-    { src: "images/facility-06.jpg", alt: "Personal training session in progress", category: "Personal Training" },
-  ],
+  {
+    src: "https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=1200&q=80",
+    alt: "Strength training in a modern gym",
+    category: "Strength"
+  },
+  {
+    src: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1200&q=80",
+    alt: "Modern gym equipment",
+    category: "Cardio"
+  },
+  {
+    src: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1200&q=80",
+    alt: "Functional fitness training",
+    category: "Functional"
+  },
+  {
+    src: "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=1200&q=80",
+    alt: "Free weights and strength equipment",
+    category: "Strength"
+  },
+  {
+    src: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=1200&q=80",
+    alt: "Gym training environment",
+    category: "Studio"
+  },
+  {
+    src: "https://images.unsplash.com/photo-1574680096145-d05b474e2155?auto=format&fit=crop&w=1200&q=80",
+    alt: "Personal training session",
+    category: "Personal Training"
+  }
+],
 
   // Testimonials — placeholders only. Replace with genuine member reviews.
   testimonials: [
